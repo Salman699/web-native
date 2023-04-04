@@ -42,9 +42,3 @@ include_once 'menu.php';
 </main>
 </div>
 
-
-
-<?php
-//memanggil file bagian bawah
-include_once 'bottom.php';
-?>
