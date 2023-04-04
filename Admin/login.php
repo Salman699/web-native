@@ -1,5 +1,3 @@
-
-
 <div id="layoutAuthentication">
     <div id="layoutAuthentication_content">
         <main>
