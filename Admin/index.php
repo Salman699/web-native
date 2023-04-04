@@ -21,8 +21,11 @@ include_once 'menu.php';
         }
 
         ?>
+
+
         <?php 
-                        //algoritma menangkap url agar masuk kedalam index
+         //memanggil login
+
         $url = $_GET['url'];
         if($url == 'login'){
             include_once 'login.php';
@@ -34,10 +37,26 @@ include_once 'menu.php';
 
     ?>
 
-    <?php
+    
+    <?php 
+    //memanggil register
+
+    $url = $_GET['url'];
+    if($url == 'register'){
+        include_once 'register.php';
+    } else if (!empty($url)){
+        include_once ''.$url.'.php';
+    } else { 'register.php';
+
+}
+
+?>
+
+
+<?php
 //memanggil file bagian bawah
-    include_once 'bottom.php';
-    ?>
+include_once 'bottom.php';
+?>
 </div>
 </main>
 </div>
